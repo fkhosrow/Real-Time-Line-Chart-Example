@@ -32,16 +32,15 @@ export default class LiveUpdating extends Component {
         enabled: false
       },
       xAxis: {
-        drawLabels: false,
-        drawGridLines: false,
-        drawAxisLines: false
+        enabled: false
       },
       yAxis: {
           left: {
-            enabled: false
+            enabled: false,
+            
           },
           right: {
-            enabled: false
+            enabled: false,
           }
       }
     };
@@ -79,6 +78,8 @@ export default class LiveUpdating extends Component {
         xAxis={config.xAxis} 
         yAxis={config.yAxis} 
         style={styles.container} 
+        touchEnabled={false}
+        logEnabled={false}
         >
         </LineChart>
     );
@@ -87,9 +88,9 @@ export default class LiveUpdating extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.5,
+    flex: 1.0,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'transparent'
+    backgroundColor: 'cyan',
   }
 });
