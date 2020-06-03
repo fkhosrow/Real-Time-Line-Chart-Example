@@ -1,13 +1,8 @@
-LineChartExample
+# Real Time Line Chart Example
 
-Draws a real-time line chart
+Plots a line chart with real-time data using react-native-charts-wrapper
 
 To run:
 > npm install
 > react-native run-android or 
 > react-native run-ios
-
-Uses react-native-chart-wrapper.
-
-For line chart, see LineChartScreen.js
-
